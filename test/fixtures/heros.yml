@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gamesPlayed: 1
+  gamesBanned: 1
+  participation: 1.5
+  winRate: 1.5
+  change: 1.5
+  heroClass: MyString
+  heroSubclass: MyString
+
+two:
+  gamesPlayed: 1
+  gamesBanned: 1
+  participation: 1.5
+  winRate: 1.5
+  change: 1.5
+  heroClass: MyString
+  heroSubclass: MyString
