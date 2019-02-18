@@ -1,0 +1,45 @@
+<h2>Ban Recommendations (Highest Total Bans)</h2>
+
+<div class="container shadow p-3 mb-5 bg-white rounded">
+        <h4>Priority Bans</h4>
+    <table id='myTable' class="table table-striped table-bordered table-hover"> 
+        <caption>OP HEROES</caption>
+        <thead class='thead-light'>
+            <tr>
+                <th>Hero</th>
+                <th>Subclass</th>
+                <th>#Bans</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @supports.each do |sup| %>
+                <tr>
+                    <td><%= sup.heroName %></td>
+                    <td><%= sup.heroSubclass %></td>
+                    <td><%= sup.gamesBanned %></td>
+                </tr>
+            <% end %>
+            <% @assassins.each do |ass| %>
+                <tr>
+                    <td><%= ass.heroName %></td>
+                    <td><%= ass.heroSubclass %></td>
+                    <td><%= ass.gamesBanned %></td>
+                </tr>
+            <% end %>
+            <% @tanks.each do |tank| %>
+                <tr>
+                    <td><%= tank.heroName %></td>
+                    <td><%= tank.heroSubclass %></td>
+                    <td><%= tank.gamesBanned %></td>
+                </tr>
+            <% end %>
+            <% @bruisers.each do |bruiser| %>
+                <tr>
+                    <td><%= bruiser.heroName %></td>
+                    <td><%= bruiser.heroSubclass %></td>
+                    <td><%= bruiser.gamesBanned %></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table> 
+    </div>

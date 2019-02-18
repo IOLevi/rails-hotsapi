@@ -4,6 +4,7 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     
     <title>ioLevi's Hots API</title>
@@ -26,6 +27,8 @@
     <%= render "navbar" %>
     <%= yield %>
     <%= render "footer" %>
+    <%= debug(params) if Rails.env.development? %>
+
     
   </body>
 </html>
