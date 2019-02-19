@@ -1,0 +1,7 @@
+fp = File.read('hotsdump')
+herolist = JSON.load fp
+
+herolist.each do |hero|
+  newhero = Hero.new(hero)
+  newhero.save
+end
