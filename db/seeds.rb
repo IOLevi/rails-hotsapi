@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+fp = File.read('hotsdump')
+herolist = JSON.load fp
+
+herolist.each do |hero|
+  newhero = Hero.new(hero)
+  newhero.save
+end
