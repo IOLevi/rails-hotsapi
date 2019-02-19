@@ -21,8 +21,8 @@
                                   <%= @current_user.username %>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href=<%= url_for('user') %>>Profile</a>
-                                    <a class="dropdown-item" href=<%= url_for('logout') %>>Logout</a>
+                                    <%= link_to "Profile", current_user, class: 'dropdown-item' %>
+                                    <%= link_to "Log out", logout_path, method: :delete, class: 'dropdown-item' %>
                                 </div>
                             </li>
                         <% end %>
