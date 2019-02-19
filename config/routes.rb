@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/api/v1/warriors', to: 'api#warriors'
   get '/api/v1/supports', to: 'api#supports'
   get '/api/v1/assassins', to: 'api#assassins'
+  post '/signup', to: 'users#create'
   resources :users
   
   # root
