@@ -20,3 +20,39 @@
 <% else %>
 <%= link_to "Edit Profile", edit_user_url %>
 <% end %>
+
+<script>
+    $(document).ready(function() {
+    let player = '<%= current_user.hotslogs %>';
+    let url = `https://api.hotslogs.com/Public/Players/1/${player}`
+
+    $.get(url, function (data) {
+        console.log((data));
+
+        for (let row of data['LeaderboardRankings']) {
+            if (row['LeagueRank'] !== null) {
+            let league = row['LeagueID'];
+            let lclass = '';
+            switch(league) {
+                case 0:
+                    lclass = 'Master'
+                    break;
+                case 1:
+                    lclass = 'Diamond'
+                    break;
+                case 2:
+                    lclass = 'Silver'
+                    break;
+                case 3:
+                    lclass = 'Bronze'
+                    break;
+            }
+             
+            $('#myTable > tbody:last-child').append(`<tr><td>${row['GameMode']}</td><td>${row['CurrentMMR']}</td><td>${lclass}</td><td>${row['LeagueRank']}</td></tr>`);
+            }
+        }
+        // $('#qm').html(data['LeaderboardRankings'][0]['CurrentMMR']);
+    });
+   });
+    
+</script>
