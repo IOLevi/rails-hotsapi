@@ -1,23 +1,13 @@
 # README
 
-RAILS HOTS API
+IOLEVI Hots API, Ruby on Rails Edition
 
-Things you may want to cover:
+Clean interface version of Hotslogs, with quick data tables and minimal bloat. See bans page for drafting suggestions. 
+Register an account to create a profile. You can edit your profile to add a Blizzard battle.net tag to see your real-time MMR (e.g., "levi_1333"). 
 
-* Ruby version: 2.5.3
+Written in Ruby on Rails.
+Postgresql.
 
-* System dependencies
+Hosted on Heroku at: https://iolevihots.herokuapp.com
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+See also: https://github.com/iolevi/hotsapi (Hotsapi in Python/Flask)
