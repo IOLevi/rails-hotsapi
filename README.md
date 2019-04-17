@@ -1,19 +1,10 @@
-# README
-
-IOLEVI Hots API, Ruby on Rails Edition
-
-Clean interface version of Hotslogs, with quick data tables and minimal bloat. See bans page for drafting suggestions. 
-Register an account to create a profile. You can edit your profile to add a Blizzard battle.net tag to see your real-time MMR (e.g., "levi_1333"). 
-
-Written in Ruby on Rails.
-Postgresql.
-
-Hosted on Heroku at: https://iolevihots.herokuapp.com
-
-See also: https://github.com/iolevi/hotsapi (Hotsapi in Python/Flask)
-
 # IOLevi's Hots API
-Clean front-end for dislaying scraped Blizzard's Heroes of the Storm game data.
+Clean front-end for dislaying scraped Blizzard's Heroes of the Storm game data. 
+Features include: Login; Session based user auth; Postgres db in prod on Heroku; XHR/API call to third-party websites; Bootstrap and DataTables; 3 API endpoints exposing data.
+You can edit your profile to add a Blizzard battle.net tag to see your real-time MMR (e.g., "levi_1333"). 
+
+See also: [Hotsapi in Python/Flask] (https://github.com/iolevi/hotsapi) - Flask/Python Version
+
 
 ## Getting Started
 
@@ -68,12 +59,10 @@ In order to seed the production database with data, run the following command:
 rails db:seed
 ```
 
-
 ## Built With
 
 * [Ruby on Rails](https://guides.rubyonrails.org/v5.1/index.html) - Ruby Framework
 * [Heroku](https://iolevihots.herokuapp.com/) - Hosting
-
 
 
 ## Versioning
@@ -81,7 +70,7 @@ rails db:seed
 I use [GitHub](http://github.com/iolevi) for versioning. 
 
 ## Known Issues:
-The database 
+In the future, I would like to implement a cronjob for continuously scraping the data server-side and updating/migrating the database. Currently, updating the data involves pushing a json dump from my local machine, run manually. 
 
 ## Author
 
