@@ -5,6 +5,8 @@ You can edit your profile to add a Blizzard battle.net tag to see your real-time
 
 See also: [Hotsapi in Python/Flask] (https://github.com/iolevi/hotsapi) - Flask/Python Version
 
+Website is deployed (live) on Heroku: [IOLevi Hots] (https://iolevihots.herokuapp.com)
+
 
 ## Getting Started
 
